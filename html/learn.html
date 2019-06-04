@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>课程详情</title>
+    <link rel="stylesheet" href="../css/common/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common/situation.css">
+    <link rel="stylesheet" href="../css/common/com_nav.css">
+    <link rel="stylesheet" href="../font/iconfont.css" />
+    <link rel="stylesheet" href="../css/common/right.css">  
+    <link rel="stylesheet" href="../css/common/login_regran.css" />
+    <link rel="stylesheet" href="../css/common/footre.css">
+    <link rel="stylesheet" href="../css/html/learn.css">
+</head>
+
+<body>
+    <!-- 二级头部导航栏 -->
+    <div id="header">
+        <div class="nav">
+            <!-- <div class="logo left">
+                    <a href="#" class="aa"><img src="../imgs/ind/logo.png" alt=""></a>
+                </div> -->
+            <ul class="nav-item">
+                <li class="left"><a href="http://localhost/imooc">慕课网首页</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html" class="selfff">免费课程</a></li>
+                <li class="left"><a href="">实战课程</a></li>
+                <li class="left"><a href="">就业班</a></li>
+                <li class="left"><a href="">专栏</a></li>
+                <li class="left"><a href="">猿问</a></li>
+                <li class="left"><a href="">手记</a></li>
+            </ul>
+            <div class="login right">
+                <ul>
+                    <li class="left"><a href=""><span class="redbao"></span>分享赚学费<div></div></a></li>
+                    <li class="left"><a href="">下载APP</a></li>
+                    <li class="left"><a href="http://localhost/imooc/html/cart.html"><span class="iconfont">&#xe63b;</span><span>购物车</span></a></li>
+                    <li class="left" id="user">
+                        <a href="" class="alogin" data-toggle="modal" data-target="#myModal">登录</a>/
+                        <a class="aregister" data-toggle="modal" data-target="#myModal">注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search left">
+                <div class="search-box">
+                    <input type="text">
+                </div>
+                <div class="search-Magnifier"><i class="iconfont">&#xe679;</i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="course-infos">
+            <div class="w pr">
+                <div class="hd clearfix">
+                    <!-- 商品名称 -->
+                    <h2 class="left"></h2>
+                </div>
+                <div class="statics clearfix">
+                    <div class="teacher-info left">
+                        <a href="/u/100015/courses?sort=publish" target="_blank">
+                            <img data-userid="100015" class="js-usercard-dialog"
+                                src="//img1.mukewang.com/5b88f1f50001688401500150-80-80.jpg" width="80" height="80">
+                        </a>
+                        <span class="tit">
+                            <a href="/u/100015/courses?sort=publish" target="_blank">慕课官方号</a><i class="icon-imooc"></i>
+                        </span>
+                        <span class="job">页面重构设计</span>
+                    </div>
+                    <div class="static-item left">
+                        <span class="meta">难度</span><span class="meta-value"></span>
+                    </div>
+                    <div class="static-item left">
+                        <span class="meta">时长</span><span class="meta-value"> 9小时18分</span>
+                    </div>
+                    <div class="static-item l">
+                        <span class="meta">学习人数</span><span class="meta-value js-learn-num"></span>
+                    </div>
+                    <div class="static-item l score-btn">
+                        <span class="meta">综合评分</span>
+                        <span class="meta-value">9.5</span>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="share-action right bdsharebuttonbox bdshare-button-style0-16"
+                        data-bd-bind="1556695761978">
+                        <!--收藏-->
+                        <div class="share js-follow-action" data-cid="9" data-cmd="follow" title="收藏"><i
+                                class="iconfont">&#xe71e;</i><span>收藏</span></div>
+                        <a href="javascript:;" class="share wx js-share icon-share-weichat" data-cmd="weixin"
+                            title="分享到微信"><i class="iconfont">&#xe63c;</i></a>
+                        <a href="javascript:;" class="share qq js-share icon-share-qq" data-cmd="qzone"
+                            title="分享到QQ空间"><i class="iconfont">&#xe601;</i></a>
+                        <a href="javascript:;" class="share sina js-share icon-share-weibo" data-cmd="tsina"
+                            title="分享到新浪微博"><i class="iconfont">&#xe63d;</i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="info-bg" id="js-info-bg">
+                <div class="cover-img-wrap">
+                    <img src="../imgs/learn/back.png" alt="" id="js-cover-img">
+                </div>
+                <div class="cover-mask"></div>
+                <canvas width="1519" height="200" class="cover-canvas" id="js-cover-canvas"></canvas>
+            </div>
+        </div>
+        <div class="course-info-menu ">
+            <div class="w">
+                <ul class="course-menu">
+                    <li><a class="moco-change-big-btn active" id="learnOn" href="/learn/9">课程章节</a></li>
+
+                    <li><a id="qaOn" class="moco-change-big-btn " href="/qa/9/t/0">问答评论</a></li>
+                    <li><a id="noteOn" class="moco-change-big-btn " href="/note/9?sort=last&amp;page=1">同学笔记</a></li>
+                    <li><a id="commentOn" class="moco-change-big-btn " href="/coursescore/9">用户评价</a></li>
+                    <li><a style="" id="wikiOn" class="moco-change-big-btn " href="/coursewiki/9">WIKI</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="course-info-main clearfix w">
+            <div class="content-wrap clearfix">
+                <div class="content left">
+                    <!-- 课程简介 -->
+                    <div class="course-description course-wrap">
+                        简介：本课程从最基本的概念开始讲起，步步深入，带领大家学习HTML、CSS样式基础知识，了解各种常用标签的意义以及基本用法，后半部分教程主要讲解CSS样式代码添加，为后面的案例课程打下基础。
+                    </div>
+                    <!-- 课程章节 -->
+                    <div class="course-chapters">
+                        <div class="chapter course-wrap ">
+                            <!-- 章节标题 -->
+                            <h3> 第1章 Html介绍</h3>
+                            <div class="chapter-description">
+                                本章节主要讲解html和css样式的关系，以及html标签、html文件结构、head标签,最后讲解了在html中的注释代码的作用。
+                            </div>
+                            <!-- 章节小节 -->
+                            <ul class="video">
+                                <li data-media-id="49">
+                                    <a href="/code/49" class="J-media-item">
+                                        <i class="iconfont">&#xeb10;</i>
+                                        1-1 代码初体验，制作我的第一个网页
+                                        <button class="right moco-btn moco-btn-red preview-btn">开始学习</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter course-wrap ">
+                            <!-- 章节标题 -->
+                            <h3> 第1章 Html介绍</h3>
+                            <div class="chapter-description">
+                                本章节主要讲解html和css样式的关系，以及html标签、html文件结构、head标签,最后讲解了在html中的注释代码的作用。
+                            </div>
+                            <!-- 章节小节 -->
+                            <ul class="video">
+                                <li data-media-id="49">
+                                    <a href="/code/49" class="J-media-item">
+                                        <i class="iconfont">&#xeb10;</i>
+                                        1-1 代码初体验，制作我的第一个网页
+                                        <button class="right moco-btn moco-btn-red preview-btn">开始学习</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chapter course-wrap ">
+                            <!-- 章节标题 -->
+                            <h3> 第1章 Html介绍</h3>
+                            <div class="chapter-description">
+                                本章节主要讲解html和css样式的关系，以及html标签、html文件结构、head标签,最后讲解了在html中的注释代码的作用。
+                            </div>
+                            <!-- 章节小节 -->
+                            <ul class="video">
+                                <li data-media-id="49">
+                                    <a href="/code/49" class="J-media-item">
+                                        <i class="iconfont">&#xeb10;</i>
+                                        1-1 代码初体验，制作我的第一个网页
+                                        <button class="right moco-btn moco-btn-red preview-btn">开始学习</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside right">
+                    <div class="course-wrap course-aside-info js-usercard-box">
+                        <div class="learn-btn">
+                            <!-- 价格 -->
+                            <div class="price" id="price">
+                                    <em>￥</em>
+                                    <span class="pricenumber" data-price="" data-id="1"></span>
+                                    <div class="can-huabei right">
+                                            <a href="//www.imooc.com/help/detail/110" target="_blank">花呗付款</a>
+                                        </div>
+                                </div>
+                            <!-- 加入购物车，并跳转 -->
+                            <span class="moco-btn moco-btn-red moco-btn-lg" id="purchase">购买</span>
+                            <span href="#" class="moco-btn moco-btn-red moco-btn-lg" id="upcomm">加入购物车</span>
+                        </div>
+                        <div class="course-info-tip">
+                            <dl class="first">
+                                <dt>课程须知</dt>
+                                <dd class="autowrap">没有任何WEB经验的WEB应用程序开发者、对WEB前端技术感兴趣的用户均可学习本教程。</dd>
+                            </dl>
+                            <dl>
+                                <dt>老师告诉你能学到什么？</dt>
+                                <dd class="autowrap">本教程代领大家轻松学习HTML、CSS样式基础知识，可以利用HTML、CSS样式技术制作出简单页面。</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="js-commend-box">
+                        <div class="mb40 recom-course-list-box">
+                            <h4>推荐课程</h4>
+                            <ul class="js-recom-course moco-aside-course clearfix">
+                                <li>
+                                    <div class="aside-course-img"><img
+                                            src="//img3.mukewang.com/szimg/59eeb17200013f8605400300-360-202.jpg">
+                                        <p class="aside-course-type">实战</p>
+                                    </div>
+                                    <div class="aside-course-content"><a href="//coding.imooc.com/class/109.html"
+                                            class="aside-course-name" target="_blank">真实数据对接 从0开发前后端分离的企业级上线项目</a>
+                                        <p class="aside-course-price"><span>￥299.00</span></p>
+                                        <div class="aside-course-dot"><i class="imv2-dot_samll">·</i></div>
+                                        <p class="aside-course-grade">中级</p>
+                                        <div class="aside-course-dot"><i class="imv2-dot_samll">·</i></div>
+                                        <p class="aside-course-people"><i class="iconfont">&#xe61e;</i><span>3420</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="aside-course-img"><img
+                                            src="//img3.mukewang.com/szimg/59eeb17200013f8605400300-360-202.jpg">
+                                        <p class="aside-course-type">实战</p>
+                                    </div>
+                                    <div class="aside-course-content"><a href="//coding.imooc.com/class/109.html"
+                                            class="aside-course-name" target="_blank">真实数据对接 从0开发前后端分离的企业级上线项目</a>
+                                        <p class="aside-course-price"><span>￥299.00</span></p>
+                                        <div class="aside-course-dot"><i class="imv2-dot_samll">·</i></div>
+                                        <p class="aside-course-grade">中级</p>
+                                        <div class="aside-course-dot"><i class="imv2-dot_samll">·</i></div>
+                                        <p class="aside-course-people"><i class="iconfont">&#xe61e;</i><span>3420</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="js-tag-box">
+                        <div class="mb40 all-attention-box">
+                            <h4>热门专题标签</h4>
+                            <div class="js-all-attention all-attention">
+                                <a href="//www.imooc.com/topic/class" target="_blank" data-id="36"
+                                    class="style">小白入门</a>
+                                <a href="//www.imooc.com/topic/fangzhan" target="_blank" data-id="27"
+                                    class="style">仿站教程</a>
+                                <a href="//www.imooc.com/topic/mysql" target="_blank" data-id="25"
+                                    class="style">更高级MySQL数据库教程</a>
+                                <a href="//www.imooc.com/topic/azmianshi" target="_blank" data-id="28"
+                                    class="style">2017 Android面试技巧</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 底部版权区 -->
+    <div id="footer">
+        <div class="waper">
+            <div class="footerwaper clearfix">
+                <div class="followus right">
+                    <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                        <div class="flw-weixin-box"></div>
+                    </a>
+                    <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                    <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+                        title="QQ空间"></a>
+                </div>
+                <div class="footer_intro left">
+                    <div class="footer_link">
+                        <ul>
+                            <li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+                            <li><a href="/index/companytrain" target="_blank" title="企业合作">企业合作</a></li>
+                            <li><a href="/about/job" target="_blank">人才招聘</a></li>
+                            <li> <a href="/about/contact" target="_blank">联系我们</a></li>
+                            <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+                            <li> <a href="/help" target="_blank">帮助中心</a></li>
+                            <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+                            <li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+                            <li><a href="https://git.imooc.com" target="_blank">代码托管</a></li>
+                            <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                            <!--  <li><a href="/corp/index" target="_blank">合作专区</a></li>
+                                        <li><a href="/about/us" target="_blank">关于我们</a></li> -->
+                        </ul>
+                    </div>
+                    <p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 右侧悬浮 -->
+    <div id="J_GotoTop" class="elevator">
+        <a href="" class="elevator-yijian"><i class="iconfont">&#xe600;</i><span>意见反馈</span></a>
+        <a href="" class="elevator-red"><i class="iconfont">&#xe664;</i><span>去赚学费</span></a>
+        <a href="" class="elevator-help"><i class="iconfont">&#xe696;</i><span>帮助中心</span></a>
+        <a href="" class="elevator-App"><i class="iconfont">&#xe630;</i><span>APP下载</span></a>
+        <a href="" class="elevator-weixin"><i class="iconfont">&#xe602;</i><span>官方微信</span></a>
+        <a href="" class="elevator-up"><i class="iconfont">&#xe63a;</i><span>返回顶部</span></a>
+    </div>
+    <!-- 登录/注册 -->
+    <!-- Modal -->
+    <div class="modal fade modal_top" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/lib/jquery-1.11.3.js"></script>
+    <script src="../js/lib/bootstrap/bootstrap.min.js"></script>、
+    <script src="../js/lib/ajax.js"></script>
+    <script src="../js/lib/common.js"></script>
+    <script src="../js/js/learn/list-learn.js"></script>
+    <script src="../js/js/user/login.js"></script>
+    <script src="../js/js/user/register.js"></script>
+    <script src="../js/js/user/user.js"></script>
+    <script src="../js/js/learn/learn_car.js"></script>
+</body>
+
+</html>

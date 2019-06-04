@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/common/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common/situation.css">
+    <link rel="stylesheet" href="../css/common/com_nav.css">
+    <link rel="stylesheet" href="../font/iconfont.css" />
+    <link rel="stylesheet" href="../css/common/right.css">
+    <link rel="stylesheet" href="../css/common/login_regran.css" />
+    <link rel="stylesheet" href="../css/common/footre.css">
+    <link rel="stylesheet" href="../css/html/cart.css">
+</head>
+
+<body>
+    <!-- 二级头部导航栏 -->
+    <div id="header">
+        <div class="nav">
+            <!-- <div class="logo left">
+                        <a href="#" class="aa"><img src="../imgs/ind/logo.png" alt=""></a>
+                    </div> -->
+            <ul class="nav-item">
+                <li class="left"><a href="http://localhost/imooc">慕课网首页</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html" class="selfff">免费课程</a></li>
+                <li class="left"><a href="">实战课程</a></li>
+                <li class="left"><a href="">就业班</a></li>
+                <li class="left"><a href="">专栏</a></li>
+                <li class="left"><a href="">猿问</a></li>
+                <li class="left"><a href="">手记</a></li>
+            </ul>
+            <div class="login right">
+                <ul>
+                    <li class="left"><a href=""><span class="redbao"></span>分享赚学费<div></div></a></li>
+                    <li class="left"><a href="">下载APP</a></li>
+                    <li class="left"><a href="http://localhost/imooc/html/cart.html"><span class="iconfont">&#xe63b;</span><span>购物车</span></a></li>
+                    <li class="left" id="user">
+                        <a href="" class="alogin" data-toggle="modal" data-target="#myModal">登录</a>/
+                        <a class="aregister" data-toggle="modal" data-target="#myModal">注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search left">
+                <div class="search-box">
+                    <input type="text">
+                </div>
+                <div class="search-Magnifier"><i class="iconfont">&#xe679;</i></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="car-title">
+            <div class="car-top">
+                <div class="cart-title left clearfix">
+                    <h1 class="left">我的购物车</h1>
+                    <div class="left js-number-box-cart">
+                        共<span class="js-coures-num">4</span>门，已选择<span class="js-choice-num">4</span>门
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="clearfix">
+                        <span class="left"><a class="js-myorderbtn  myorder-history" href="/myorder">我的订单历史</a></span>
+                        <span class="left num js-order-num" style="display: none;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car-body">
+            <div class="car-body-title clearfix">
+                <div class="item-1 left">
+                    <input type="checkbox" class="js-check-all check imv2-checkbox" id="allele">
+                    <span class="c-93999f">全选</span>
+                </div>
+
+                <div class="item-2 left">
+                    <span class="c-4d555d">课程</span>
+
+                </div>
+
+                <div class="item-3 left">
+                    <span class="c-4d555d">金额</span>
+                </div>
+
+                <div class="item-4 left">
+                    <span class="c-4d555d">操作</span>
+                </div>
+            </div>
+            <div class="cart-body-table" id="carttable">
+                <!-- 商品 -->
+
+
+                <!-- 总价 -->
+                <div class="cart-body-bot js-cart-body-bot" id="settlement">
+                    <div class="clearfix cart-body-bot-box">
+                        <div class="right">
+                            <ul class="clearfix">
+                                <li class="li-2">
+                                    <div class="topdiv">总计金额：</div>
+                                    <div class="price price-red clearfix">
+                                        <em>￥</em>
+                                        <span class="jsAltogether">0.00</span>
+                                    </div>
+                                </li>
+                                <li class="li-3">
+                                    <span class="btn js-go-confrim">去结算</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- 底部版权区 -->
+    <div id="footer">
+        <div class="waper">
+            <div class="footerwaper clearfix">
+                <div class="followus right">
+                    <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                        <div class="flw-weixin-box"></div>
+                    </a>
+                    <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                    <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+                        title="QQ空间"></a>
+                </div>
+                <div class="footer_intro left">
+                    <div class="footer_link">
+                        <ul>
+                            <li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+                            <li><a href="/index/companytrain" target="_blank" title="企业合作">企业合作</a></li>
+                            <li><a href="/about/job" target="_blank">人才招聘</a></li>
+                            <li> <a href="/about/contact" target="_blank">联系我们</a></li>
+                            <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+                            <li> <a href="/help" target="_blank">帮助中心</a></li>
+                            <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+                            <li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+                            <li><a href="https://git.imooc.com" target="_blank">代码托管</a></li>
+                            <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                            <!--  <li><a href="/corp/index" target="_blank">合作专区</a></li>
+                                            <li><a href="/about/us" target="_blank">关于我们</a></li> -->
+                        </ul>
+                    </div>
+                    <p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧悬浮 -->
+    <div id="J_GotoTop" class="elevator">
+        <a href="" class="elevator-yijian"><i class="iconfont">&#xe600;</i><span>意见反馈</span></a>
+        <a href="" class="elevator-red"><i class="iconfont">&#xe664;</i><span>去赚学费</span></a>
+        <a href="" class="elevator-help"><i class="iconfont">&#xe696;</i><span>帮助中心</span></a>
+        <a href="" class="elevator-App"><i class="iconfont">&#xe630;</i><span>APP下载</span></a>
+        <a href="" class="elevator-weixin"><i class="iconfont">&#xe602;</i><span>官方微信</span></a>
+        <a href="" class="elevator-up"><i class="iconfont">&#xe63a;</i><span>返回顶部</span></a>
+    </div>
+
+    <!-- 登录/注册 -->
+    <!-- Modal -->
+    <div class="modal fade modal_top" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/lib/jquery-1.11.3.js"></script>
+    <script src="../js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/lib/ajax.js"></script>
+    <script src="../js/lib/common.js"></script>
+    <script src="../js/js/user/login.js"></script>
+    <script src="../js/js/user/register.js"></script>
+    <script src="../js/js/user/user.js"></script>
+    <script src="../js/js/cart/cart_rendering.js"></script>
+    <script src="../js/js/cart/cart.js"></script>
+    
+</body>
+
+</html>

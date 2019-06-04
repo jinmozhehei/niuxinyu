@@ -1,0 +1,64 @@
+{
+    "index_curriculum": [
+        {
+            "name": "Node.js从零开发Web Server博客项目  前端晋升全栈工程师必备",
+            "src": "//img2.mukewang.com/szimg/5c7c82630820acf806000338.jpg",
+            "money": "288.00",
+            "tese": "满减"
+        },
+        {
+            "name": "GO从0到1实战微服务版抢红包系统",
+            "src": "//img4.mukewang.com/szimg/5cd14db4093694ef06000338.jpg",
+            "money": "298.00",
+            "tese": "限时优惠"
+        },
+        {
+            "name": "ViewPager+Tab特效实现微信主界面",
+            "src": "//img2.mukewang.com/5cb0320d084566ed06000338-240-135.jpg",
+            "money": "0.00",
+            "tese": "免费"
+        },
+        {
+            "name": "从基础到实战 手把手带你掌握新版Webpack4.0",
+            "src": "//img3.mukewang.com/szimg/5c6bdb3e08e4674a06000338.jpg",
+            "money": "299.00",
+            "tese": "满减"
+        },
+        {
+            "name": "SpringCloud  Finchley三版本(M2+RELEASE+SR2)微服务实战",
+            "src": "//img1.mukewang.com/szimg/5cb68a1408ed350506000338.jpg",
+            "money": "366.00",
+            "tese": "满减"
+        },
+        {
+            "name": "剖析Framework面试 冲击Android高级职位",
+            "src": "//img3.mukewang.com/szimg/5cc657ee086fc3e706000338.jpg",
+            "money": "288.00",
+            "tese": "限时优惠"
+        },
+        {
+            "name": "轻松入门微信小程序与云开发",
+            "src": "//img2.mukewang.com/5cce8be1088dd62806000338-240-135.jpg",
+            "money": "0.00",
+            "tese": "免费"
+        },
+        {
+            "name": "Flutter从入门到进阶 实战携程网App",
+            "src": "//img2.mukewang.com/szimg/5c7e6835087ef3d806000338.jpg",
+            "money": "348.00",
+            "tese": "限时优惠"
+        },
+        {
+            "name": "破解Retrofit",
+            "src": "//img4.mukewang.com/5cd4eb0d08845c7606000338-240-135.jpg",
+            "money": "0.00",
+            "tese": "免费"
+        },
+        {
+            "name": "微信分享与支付专项课程 （公众号 小程序（云））",
+            "src": "//img2.mukewang.com/szimg/5cd5712008f4b45106000338.jpg",
+            "money": "245.00",
+            "tese": "限时优惠"
+        }
+    ]
+}

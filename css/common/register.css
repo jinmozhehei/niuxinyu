@@ -1,0 +1,29 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(http://localhost/imooc/imgs/register/timg.jpg);
+    background-size: 100% 100%;
+}
+
+.rform {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.rform .control-label {
+    text-align: left;
+}
+
+.form-group>.col-sm-offset-2 {
+    margin:0 ;
+    text-align: center;
+}
+.form-group>.col-sm-offset-2 button{
+    width: 100px;
+    height: 30px;
+}

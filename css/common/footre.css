@@ -1,0 +1,73 @@
+#footer {
+    background: #1c1f21;
+    border-top: 1px solid #e2e4e6;
+    font-size: 12px;
+    color: #787d82;
+    padding: 27px 0;
+    min-width: 620px;
+}
+#footer .waper {
+    width: auto;
+    max-width: 1200px;
+}
+.waper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#footer .followus {
+    margin-right: 34px;
+    padding-left: 30px;
+}
+.followus a {
+    float: left;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../imgs/common/footer-sprite.png);
+    background-repeat: no-repeat;
+    margin: 3px 6px 0;
+    opacity: .5;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
+    z-index: 2;
+}
+
+.followus .followus-weixin {
+    background-position: 0 -279px;
+}
+.followus .followus-weibo {
+    background-position: 0 -321px;
+}
+.followus .followus-qzone {
+    background-position: 0 -363px;
+}
+
+
+#footer .footer_intro {
+    padding-left: 40px;
+}
+#footer .footer_link {
+    margin-bottom: 4px;
+    line-height: 1.8;
+}
+.footer_link ul {
+    overflow: hidden;
+    margin-top: -1px;
+}
+#footer .footer_link li {
+    margin-right: 30px;
+    text-align: center;
+    float: left;
+}
+.footer_link a:active, .footer_link a:link, .footer_link a:visited {
+    color: #c8cdd2;
+}
+clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

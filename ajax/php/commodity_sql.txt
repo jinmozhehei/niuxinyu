@@ -1,0 +1,37 @@
+id ---商品ID自增长，根据id找商品，列表、详情、购物车
+name--- 课程名
+src---路径
+money---价格
+tese---优惠（满减，限时优惠）
+style---类型（就业班，实战）
+grade---等级（初级，中级）
+number---人数
+project---项目（实战推荐、新上好课）
+
+{
+	“commodity”:[
+		{
+            "name": " ",
+            "src": "",
+            "money": "",
+            "tese":"",
+            "style": "",
+            "grade": "",
+            "number": "",
+            "project": ""
+        }
+	]	
+}
+
+
+
+{
+    "name": " ",
+    "src": "",
+    "money": "",
+    "tese":"",
+    "style": "",
+    "grade": "",
+    "number": "",
+    "project": ""
+}

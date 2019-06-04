@@ -1,0 +1,99 @@
+.modal_top{
+    top: 20%;
+}
+.modal-content{
+    padding: 10px 0 30px;
+}
+.modal-dialog {
+    width: 384px;
+}
+.modal-header{
+    border: none
+}
+.close span{
+    font-size: 25px;
+}
+.modal-header>a {
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.modal-header>.ared {
+    color: #f00;
+}
+.modal-header>a::after {
+    content: " ";
+    width: 16px;
+    height: 4px;
+    line-height: 4px;  
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+}
+.modal-header>.ared::after{
+    background: #f20d0d;
+}
+.modal-header a:hover::after{
+    background: #f20d0d;
+}
+
+.form-group>.checkbox{
+    width: 318px;
+    padding-left: 15px;
+    line-height:27px;
+}
+.form-group>.checkbox input{
+    margin-top:6px;
+}
+.form-group>.checkbox>.help{
+    display: inline-block;
+}
+.modal-footer{
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+.modal-footer .btn{
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 24px;
+    border: #f20d0d;
+    background: #f20d0d;
+    font-size: 16px;
+}
+.modal-footer .btn:hover,.modal-footer .btn:active   {
+    background: #cc0808;
+}
+.modal-footer .btn:link,.modal-footer .btn:visited {
+    background: #f20d0d;
+}
+
+.modal-body{
+    padding: 0 32px;
+}
+
+
+.regrandom{
+    position: relative;    
+}
+
+#regran{
+    display: block;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -12px;
+    background: #cc0808;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}

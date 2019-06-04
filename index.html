@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慕课网-程序员梦工厂</title>
+
+    <link rel="stylesheet" href="css/common/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common/situation.css">
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/common/index_nav.css">
+    <link rel="stylesheet" href="css/html/index.css" />
+    <link rel="stylesheet" href="css/common/login_regran.css" />
+    <link rel="stylesheet" href="css/common/right.css">
+    <link rel="stylesheet" href="css/common/footre.css">
+
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div id="header">
+        <div class="nav">
+            <div class="logo left">
+                <a href="#" class="aa"><img src="imgs/ind/logo.png" alt=""></a>
+            </div>
+            <ul class="nav-item">
+                <li class="left"><a href="http://localhost/imooc/html/list.html">免费课程</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html">实战课程</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html">就业班</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html">专栏</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html">猿问</a></li>
+                <li class="left"><a href="http://localhost/imooc/html/list.html">手记</a></li>
+            </ul>
+            <div class="login right">
+                <ul>
+                    <li class="left"><a href=""><span class="redbao"></span>分享赚学费<div></div></a></li>
+                    <li class="left"><a href="">下载APP</a></li>
+                    <li class="left"><a href="http://localhost/imooc/html/cart.html"><span class="iconfont">&#xe63b;</span><span>购物车</span></a></li>
+                    <li class="left" id="user">
+                        <a href="" class="alogin" data-toggle="modal" data-target="#myModal">登录</a>/
+                        <a class="aregister" data-toggle="modal" data-target="#myModal">注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search left">
+                <div class="search-box">
+                    <input type="text">
+                </div>
+                <div class="search-Magnifier"><i class="iconfont">&#xe679;</i></div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面主体 -->
+    <div id="main">
+        <!-- banner -->
+        <div class="banner">
+            <div class="banner-box">
+                <div class="menuContent">
+                    <div class="menuwrap">
+                        <div class="item" data-id="a"><a href=""><span>前沿 / 区块链 / 人工智能</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                        <div class="item" data-id="a"><a href=""><span>前端 / 小程序 / JS</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                        <div class="item" data-id="a"><a href=""><span>后端 / JAVA / Python</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                        <div class="item" data-id="a"><a href=""><span>移动 / Android / IOS</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                        <div class="item" data-id="a"><a href=""><span>云计算 / 大数据/ 容器</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                        <div class="item" data-id="a"><a href=""><span>运维 / 测试 / 数据库</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                        <div class="item" data-id="a"><a href=""><span>UI设计 / 3D动画 / 游戏</span><i
+                                    class="iconfont">&#xe6cc;</i></a></div>
+                    </div>
+                </div>
+                <div class="banner-content left">
+                    <div id="content-img">
+                        <ul>
+                            <li><a href=""><img src="imgs/ind/5b874f9d00013f5309360316.jpg" /></a></li>
+                            <li><a href=""><img src="imgs/ind/5b95d0d3000182cb09360316.jpg" /></a></li>
+                            <li><a href=""><img src="imgs/ind/5c1250f2000151d018720632.jpg" /></a></li>
+                            <li><a href=""><img src="imgs/ind/5c05527100017e1d18720632.jpg" /></a></li>
+                            <li><a href=""><img src="imgs/ind/5cb707630001f27f16000540.jpg" /></a></li>
+                            <li><a href=""><img src="imgs/ind/5b3ca3060001241b09360316.jpg" /></a></li>
+                            <li><a href=""><img src="imgs/ind/5cbd22130001efb716000540.jpg" /></a></li>
+                        </ul>
+                        <div id="dir">
+                            <a href="##">&lt;</a>
+                            <a href="##">&gt;</a>
+                        </div>
+                        <div id="circular">
+                            <a href="##" class="active"></a>
+                            <a href="##"></a>
+                            <a href="##"></a>
+                            <a href="##"></a>
+                            <a href="##"></a>
+                            <a href="##"></a>
+                            <a href="##"></a>
+                        </div>
+                    </div>
+                    <div class="banner-path">
+                        <a href=""><i class="i-web"></i>
+                            <p class="tit">Web前端攻城狮</p>
+                            <p class="desc">踏入IT行业从此开始</p>
+                        </a>
+                        <a href=""><i class="i-java"></i>
+                            <p class="tit">Java攻城狮</p>
+                            <p class="desc">全球三大编程语言之一</p>
+                        </a>
+                        <a href=""><i class="i-android"></i>
+                            <p class="tit">Android攻城狮</p>
+                            <p class="desc">5G物联网通万物</p>
+                        </a>
+                        <a href=""><i class="i-php"></i>
+                            <p class="tit">PHP攻城狮</p>
+                            <p class="desc">打通前后端一步到位</p>
+                        </a>
+                        <a href=""><i class="i-python"></i>
+                            <p class="tit">Python攻城狮</p>
+                            <p class="desc">爬虫大数据抢占先机</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 实战推荐 -->
+        <div class="bgfff">
+            <div class="container-types">
+                <h3 class="types-title">
+                    <span
+                        class="tit-icon icon-shizhan-l tit-icon-l"></span><em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em><span
+                        class="tit-icon icon-shizhan-r tit-icon-r"></span>
+                </h3>
+                <div class="clearfix" id="actual">
+                </div>
+
+            </div>
+        </div>
+        <!-- 新上好课 -->
+        <div class="bg000">
+            <div class="container-types clearfix">
+                <h3 class="types-title"><span
+                        class="tit-icon icon-new-l tit-icon-l"></span><em>新</em>／<em>上</em>／<em>好</em>／<em>课</em><span
+                        class="tit-icon icon-new-r tit-icon-r"></span></h3>
+                <div class="types-content" id="curriculum">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- 新手入门 -->
+        <div class="bgfff">
+            <div class="container-types clearfix">
+                <div class="adsense-box ">
+                    <h3 class="types-title"><span
+                            class="tit-icon icon-job-l tit-icon-l"></span><em>新</em>／<em>手</em>／<em>入</em>／<em>门</em><span
+                            class="tit-icon icon-job-r tit-icon-r"></span></h3>
+                    <div class="clearfix types-content" id="novice">
+                        <div class="adsense-box left"
+                            style="background: url(imgs/ind/5cbd837c0001b18b05670108.jpg.png) no-repeat center center;background-size: 100%;">
+                            <a href="">
+                                <h3 class="ellipsis">Vue高级工程师实战之路</h3>
+                                <p class="ellipsis">从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </a>
+                        </div>
+                        <div class="adsense-box left"
+                            style="background: url(imgs/ind/5bf224930001991905670108.jpg) no-repeat center center;background-size: 100%;">
+                            <a href="">
+                                <h3 class="ellipsis">Vue高级工程师实战之路</h3>
+                                <p class="ellipsis">从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </a>
+                        </div>
+
+
+
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <!-- 技术提升 -->
+        <div class="bg000">
+            <div class="container-types clearfix">
+                <div class="adsense-box ">
+                    <h3 class="types-title"><span
+                            class="tit-icon icon-job-l tit-icon-l"></span><em>技</em>／<em>术</em>／<em>提</em>／<em>升</em><span
+                            class="tit-icon icon-job-r tit-icon-r"></span></h3>
+                    <div class="clearfix types-content" id="technology">
+                        <div class="adsense-box left"
+                            style="background: url(imgs/ind/5cbd837c0001b18b05670108.jpg.png) no-repeat center center;background-size: 100%;">
+                            <a href="">
+                                <h3 class="ellipsis">Vue高级工程师实战之路</h3>
+                                <p class="ellipsis">从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </a>
+                        </div>
+                        <div class="adsense-box left"
+                            style="background: url(imgs/ind/5bf224930001991905670108.jpg) no-repeat center center;background-size: 100%;">
+                            <a href="">
+                                <h3 class="ellipsis">Vue高级工程师实战之路</h3>
+                                <p class="ellipsis">从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </a>
+                        </div>
+                        <!-- <div class="index-card-container">
+                            <a href="">
+                                <div class="course-card-top ">
+                                    <div class="course-banner">
+                                        <div class="img-up"
+                                            style="background: url(imgs/ind/5c7e2b5800013ea906000338.jpg) no-repeat center center;background-size: 100%;">
+                                        </div>
+                                        <div class="img-mid"
+                                            style="background: url(imgs/ind/5c7e2b5800013ea906000338.jpg) no-repeat center center;background-size: 100%;">
+                                        </div>
+                                        <div class="img-dow"
+                                            style="background: url(imgs/ind/5c7e2b5800013ea906000338.jpg) no-repeat center center;background-size: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <h3 class="course-card-name">Java 零基础入门 2019版</h3>
+                                    <div class="clearfix course-card-bottom">
+                                        <div class="course-card-info">
+                                            <span>就业班</span>
+                                            <span>3步／28课</span>
+                                            <span><i class="iconfont">&#xe61e;</i>529</span>
+                                        </div>
+                                        <div class="course-card-price sales left">￥568.00</div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div> -->
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <!-- 前沿技术 -->
+        <div class="bgfff">
+            <div class="container-types clearfix">
+                <div class="adsense-box ">
+                    <h3 class="types-title"><span
+                            class="tit-icon icon-job-l tit-icon-l"></span><em>前</em>／<em>沿</em>／<em>技</em>／<em>术</em><span
+                            class="tit-icon icon-job-r tit-icon-r"></span></h3>
+                    <div class="clearfix types-content" id="front">
+                        <div class="adsense-box left"
+                            style="background: url(imgs/ind/5cbd837c0001b18b05670108.jpg.png) no-repeat center center;background-size: 100%;">
+                            <a href="">
+                                <h3 class="ellipsis">Vue高级工程师实战之路</h3>
+                                <p class="ellipsis">从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </a>
+                        </div>
+                        <div class="adsense-box left"
+                            style="background: url(imgs/ind/5bf224930001991905670108.jpg) no-repeat center center;background-size: 100%;">
+                            <a href="">
+                                <h3 class="ellipsis">Vue高级工程师实战之路</h3>
+                                <p class="ellipsis">从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </a>
+                        </div>
+                        <!-- <div class="index-card-container">
+                            <a href="">
+                                <div class="course-card-top ">
+                                    <div class="course-banner">
+                                        <div class="img-up"
+                                            style="background: url(imgs/ind/5c7e2b5800013ea906000338.jpg) no-repeat center center;background-size: 100%;">
+                                        </div>
+                                        <div class="img-mid"
+                                            style="background: url(imgs/ind/5c7e2b5800013ea906000338.jpg) no-repeat center center;background-size: 100%;">
+                                        </div>
+                                        <div class="img-dow"
+                                            style="background: url(imgs/ind/5c7e2b5800013ea906000338.jpg) no-repeat center center;background-size: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <h3 class="course-card-name">Java 零基础入门 2019版</h3>
+                                    <div class="clearfix course-card-bottom">
+                                        <div class="course-card-info">
+                                            <span>就业班</span>
+                                            <span>3步／28课</span>
+                                            <span><i class="iconfont">&#xe61e;</i>529</span>
+                                        </div>
+                                        <div class="course-card-price sales left">￥568.00</div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div> -->
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <!-- 精彩手记及猿问 -->
+        <div class="bg000">
+            <div class="container-types">
+                <h3 class="types-title"><span
+                        class="tit-icon icon-art-l tit-icon-l"></span><em>精</em>／<em>彩</em>／<em>手</em>／<em>记</em>／<em>及</em>／<em>猿</em>／<em>问</em><span
+                        class="tit-icon icon-art-r tit-icon-r"></span></h3>
+                <div class="wonderful-list js-wonderful-list types-content">
+                    <div class="item">
+                        <label class="article-label blue"><i class="iconfont">&#xe61b;</i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="" class="big-tit left hasimg">【前端学习路线2019版】看新手如何系统掌握前端技能</a>
+                            <img src="imgs/ind/5c92209100019b0402500237-210-130.jpg" class="right" />
+                        </div>
+                        <div>
+                            <p class="article-content">前端怎样入门？ 这一波良心推荐的【前端学习路线】干货，不谈虚的，直接来谈每个阶段要学习的内容
+                                想入门前端的小伙伴们，那就放马过来吧！ 首先，给大家分享一张最新的以 企业岗位需求为导向前端技能点图，如下 根据前端工程师技能点图，我们分为四个阶段： 第一阶段：前端基础
+                                （HTML / CSS / HTML5 / CSS3 / JavaScript ） 干货文章： 初识HTML+CSS 【学...</p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 9173</span><span>推荐 127</span>
+                                <a href="/article/283450" target="_blank" class="right blue">阅读全文<i class="">-></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧悬浮 -->
+    <div id="J_GotoTop" class="elevator">
+        <a href="" class="elevator-yijian"><i class="iconfont">&#xe600;</i><span>意见反馈</span></a>
+        <a href="" class="elevator-red"><i class="iconfont">&#xe664;</i><span>去赚学费</span></a>
+        <a href="" class="elevator-help"><i class="iconfont">&#xe696;</i><span>帮助中心</span></a>
+        <a href="" class="elevator-App"><i class="iconfont">&#xe630;</i><span>APP下载</span></a>
+        <a href="" class="elevator-weixin"><i class="iconfont">&#xe602;</i><span>官方微信</span></a>
+        <a href="" class="elevator-up"><i class="iconfont">&#xe63a;</i><span>返回顶部</span></a>
+    </div>
+    <!-- 登录/注册 -->
+    <!-- Modal -->
+    <div class="modal fade modal_top" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="waper">
+            <div class="footerwaper clearfix">
+                <div class="followus right">
+                    <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                        <div class="flw-weixin-box"></div>
+                    </a>
+                    <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                    <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+                        title="QQ空间"></a>
+                </div>
+                <div class="footer_intro left">
+                    <div class="footer_link">
+                        <ul>
+                            <li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+                            <li><a href="/index/companytrain" target="_blank" title="企业合作">企业合作</a></li>
+                            <li><a href="/about/job" target="_blank">人才招聘</a></li>
+                            <li> <a href="/about/contact" target="_blank">联系我们</a></li>
+                            <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+                            <li> <a href="/help" target="_blank">帮助中心</a></li>
+                            <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+                            <li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+                            <li><a href="https://git.imooc.com" target="_blank">代码托管</a></li>
+                            <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                            <!--  <li><a href="/corp/index" target="_blank">合作专区</a></li>
+                                    <li><a href="/about/us" target="_blank">关于我们</a></li> -->
+                        </ul>
+                    </div>
+                    <p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/lib/jquery-1.11.3.js"></script>
+    <script src="./js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/lib/ajax.js"></script>
+    <script src="./js/js/index/index.js"></script>
+    <script src="./js/js/index/ren_index.js"></script>
+    <script src="./js/lib/common.js"></script>
+    <script src="./js/js/user/login.js"></script>
+    <script src="./js/js/user/register.js"></script>
+    <script src="./js/js/user/user.js"></script>
+</body>
+
+</html>
